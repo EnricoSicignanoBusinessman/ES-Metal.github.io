@@ -10,8 +10,6 @@
 # General
 --------------------------------------------------------------*/
 
-
-
 #navbar {
   width: 100%;
   display: flex;
@@ -19,7 +17,6 @@
   align-items: center;
   padding: 10px;
 }
-
 
 @media screen and (max-width: 768px) {
     #navbar ul {
@@ -41,12 +38,29 @@
 }
 
 
+#navbar {
+    display: flex;
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Assicura che la navbar occupi tutta la larghezza */
+    padding: 10px 0; /* Evita padding eccessivo */
+}
 
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
 
+#navbar ul li {
+    margin: 0 15px; /* Spazio uniforme tra gli elementi */
+}
 
-
-
-
+.navbar-logo {
+    height: 40px;
+}
 
 
 body {
