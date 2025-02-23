@@ -11,9 +11,10 @@
 --------------------------------------------------------------*/
 
 
-/* Navbar di base */
+
+
+
 #navbar {
-  background-color: #ffffff; /* Sostituisci con il colore che desideri (bianco in questo caso) */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -34,7 +35,7 @@
 
 #navbar ul li a {
   text-decoration: none;
-  color: #333; /* Sostituisci con il colore del testo che preferisci */
+  color: #333;
   font-size: 16px;
   padding: 5px 10px;
 }
@@ -43,28 +44,71 @@
   font-weight: bold;
 }
 
-/* Responsività per schermi piccoli (meno di 768px) */
 @media screen and (max-width: 768px) {
   #navbar {
-    flex-direction: column; /* Gli elementi nella navbar vanno uno sotto l'altro */
-    text-align: center;
+    flex-direction: column; 
+    text-align: center; 
   }
 
   #navbar ul {
-    flex-direction: column; /* Cambia la direzione della lista per i dispositivi mobili */
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
   }
 
   #navbar ul li {
-    margin: 10px 0; /* Aggiungi margine verticale tra gli elementi */
+    margin: 10px 0; 
   }
 
-  /* Se la navbar contiene immagini, centrarla */
   .navbar-logo {
-    max-width: 150px; /* Ridimensiona il logo se necessario */
+    max-width: 150px; 
     margin: 10px 0;
   }
 }
+
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none; 
+    flex-direction: column;
+  }
+
+  #navbar ul.show {
+    display: flex; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  
+  h1, h2, h3, p {
+    font-size: 16px; 
+  }
+
+  .image-container img {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+
+
 
 
 
