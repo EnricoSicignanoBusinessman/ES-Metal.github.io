@@ -14,7 +14,11 @@
     #navbar ul {
         display: none; /* Nasconde tutti i link della navbar */
     }
-
+	
+	#navbar {
+        display: none; /* Nasconde completamente la navbar */
+    }
+	
     .navbar-logo {
         display: block; /* Mostra solo il logo */
         margin: auto; /* Centra il logo */
