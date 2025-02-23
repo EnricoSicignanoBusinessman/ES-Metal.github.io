@@ -10,23 +10,64 @@
 # General
 --------------------------------------------------------------*/
 
-/* Navbar generica */
-.navbar {
+
+/* Navbar di base */
+#navbar {
+  background-color: #ffffff; /* Sostituisci con il colore che desideri (bianco in questo caso) */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box;
 }
 
-/* Quando lo schermo è piccolo (ad esempio sotto i 768px), modifica la navbar */
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #333; /* Sostituisci con il colore del testo che preferisci */
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+#navbar ul li a.active {
+  font-weight: bold;
+}
+
+/* Responsività per schermi piccoli (meno di 768px) */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Metti gli elementi in verticale */
+  #navbar {
+    flex-direction: column; /* Gli elementi nella navbar vanno uno sotto l'altro */
     text-align: center;
   }
+
+  #navbar ul {
+    flex-direction: column; /* Cambia la direzione della lista per i dispositivi mobili */
+    align-items: center;
+  }
+
+  #navbar ul li {
+    margin: 10px 0; /* Aggiungi margine verticale tra gli elementi */
+  }
+
+  /* Se la navbar contiene immagini, centrarla */
+  .navbar-logo {
+    max-width: 150px; /* Ridimensiona il logo se necessario */
+    margin: 10px 0;
+  }
 }
+
+
+
 
 
 
