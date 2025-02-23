@@ -10,6 +10,23 @@
 # General
 --------------------------------------------------------------*/
 
+/* Navbar generica */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Quando lo schermo è piccolo (ad esempio sotto i 768px), modifica la navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Metti gli elementi in verticale */
+    text-align: center;
+  }
+}
 
 
 
