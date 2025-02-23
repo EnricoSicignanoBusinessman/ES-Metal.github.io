@@ -40,10 +40,10 @@
 
 #navbar {
     display: flex;
-    justify-content: center; /* Centra gli elementi orizzontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100%; /* Assicura che la navbar occupi tutta la larghezza */
-    padding: 10px 0; /* Evita padding eccessivo */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 10px 0; 
 }
 
 #navbar ul {
@@ -55,7 +55,7 @@
 }
 
 #navbar ul li {
-    margin: 0 15px; /* Spazio uniforme tra gli elementi */
+    margin: 0 15px;
 }
 
 .navbar-logo {
