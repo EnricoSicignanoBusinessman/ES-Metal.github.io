@@ -10,21 +10,75 @@
 # General
 --------------------------------------------------------------*/
 
-@media (max-width: 768px) {
-    #navbar ul {
-        display: none; /* Nasconde tutti i link della navbar */
-    }
-	
-	#navbar {
-        display: none; /* Nasconde completamente la navbar */
-    }
-	
-    .navbar-logo {
-        display: block; /* Mostra solo il logo */
-        margin: auto; /* Centra il logo */
-        max-width: 150px; /* Regola la dimensione del logo */
-    }
+.nav-links.show {
+    display: flex;
 }
+
+
+
+/* Stili di base per la navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Stili per l'hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+/* Media query per dispositivi mobili */
+
+
+
+
+
+
 
 #navbar {
     display: flex;
